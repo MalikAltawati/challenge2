@@ -120,6 +120,7 @@ Note: please write one or two lines here describing your solution.
 
 Here’s the data you’ll work with:
 */
+//  used filter because i see it was the appropriate one for this function
 
 var data = [
   {
@@ -142,6 +143,9 @@ var data = [
 
 function highestPopulation(arrayOfObjects) {
   // TODO: your code here
+  return filter(arrayOfObjects,function(element , key){
+    return element.population > 500000000;
+  });
 }
 
 //=============================================================================
