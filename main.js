@@ -40,14 +40,32 @@ Depending on data modeling concept that you have learned:
 
 Create a factory function called makeComputer that represents computers, 
 What different attributes computers may have? 
+
+// RAM / CPU / HDD / SDD
+
 Create two computers object from your factory function and save them in one array called computers!
 
 Note: please write one or two lines here describing your solution.
-*/
+*/// to write a factory function I started with using return and I passed all the possible attributes within
+// the curly brackets , then declared 2 computers and assigned them using the factory function
+// and values passed to it 
 
-function makeComputer(type, color, weight) {
+function makeComputer(type, color, weight, RAM , Storage) {
   // TODO: Your code here
+  return{
+    type: type,
+    color: color,
+    weight: weight,
+    RAM: RAM,
+    Storage: Storage 
+
+  }
 }
+
+var computer1 = makeComputer("HP", "RED", "5 KILO", "16RAM","HDD");
+var computer2 = makeComputer("DELL", "WHITE", "4.5 KILO", "8RAM","SDD");
+
+var array = [computer1,computer2];
 
 // Write a function displayComputer that can be used to display one computer.
 
