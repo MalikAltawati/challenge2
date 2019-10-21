@@ -71,6 +71,7 @@ var array = [computer1,computer2];
 
 function displayComputer(computer) {
   // TODO: Your code here
+  return computer;
 }
 
 //=============================================================================
@@ -84,15 +85,25 @@ and returns an array of all of those strings, but transformed to upper case.
 You can use toUpperCase method to convert a string to upper case. 
 Solve it using the most appropriate helper functions(each,map,filter).
 
+
+
 Note: please write one or two lines here describing your solution.
 
 var strArr = ['hello', 'world', 'whirled', 'peas'];
 uppercaseAll(strArr); ==> [ 'HELLO', 'WORLD', 'WHIRLED', 'PEAS' ]
 */
 
+//  used map because i see it was the appropriate one for this function
+
+
 function uppercaseAll(arrayOfStrings) {
   // TODO: your code here
-}
+  return map(arrayOfStrings,function(string){
+    return string.toUpperCase();
+  });
+
+  }
+
 
 //=============================================================================
 /*                                  Q3                                       */
