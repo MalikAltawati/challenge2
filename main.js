@@ -120,7 +120,7 @@ Note: please write one or two lines here describing your solution.
 
 Here’s the data you’ll work with:
 */
-//  used filter because i see it was the appropriate one for this function
+//  used filter because i see it was the appropriate one for this function and because it has a condition 
 
 var data = [
   {
@@ -163,11 +163,14 @@ halveAll(numsArray); ==> [ 1, 3, 10, 4, 7 ]
 
 Note: please write one or two lines here describing your solution.
 */
+//  used filter because i see it was the appropriate one for this function
 
 function halveAll(numbers) {
   // your code is here
+  return map(numbers,function(number){
+    return number / 2
+  });
 }
-
 //=============================================================================
 /*                                  Q5                                       */
 //=============================================================================
