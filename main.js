@@ -183,8 +183,14 @@ values({first : 5, second: 'something' , third : 129}) ==> [5, 'something', 129]
 
 Note: please write one or two lines here describing your solution.
 */
+// used map because i see it was the appropriate one for this function
 function values(obj) {
-  // TODO: your code here
+  return map(obj,function(element){
+    return element;
+  });
+
+
 }
 
 //Good Luck :))
+// thanks 
